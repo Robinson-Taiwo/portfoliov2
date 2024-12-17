@@ -1,0 +1,62 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 84 96"
+  role="img"
+  width="58px"
+  height="58px"
+  style="cursor: pointer;"
+>
+  <title>Hexagon Logo</title>
+  <style>
+    /* Smooth transition */
+    .hex-shape {
+      transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    /* Hover effect to simulate elevation */
+    svg:hover polygon.hex-shape {
+      transform: translate(-4px, -4px);
+      filter: drop-shadow(4px 4px 0px #00e5ff);
+    }
+
+    /* Text Transition */
+    text {
+      transition: transform 0.4s ease, fill 0.4s ease;
+    }
+
+    /* Glow effect for text */
+    svg:hover text {
+      transform: translate(-2px, -2px);
+      fill: #00ffff; /* Brighter cyan */
+    }
+  </style>
+
+  <!-- Hexagon Shape -->
+  <g transform="translate(-8.000000, -2.000000)">
+    <g transform="translate(11.000000, 5.000000)">
+      <polygon
+        class="hex-shape"
+        points="39 0 0 22 0 67 39 90 78 68 78 23"
+        fill="#001433"
+        stroke="#00e5ff"
+        stroke-width="2.9"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </g>
+  </g>
+
+  <!-- Centered "T" -->
+  <text
+    x="50%"
+    y="52%"
+    text-anchor="middle"
+    alignment-baseline="middle"
+    fill="#00e5ff"
+    font-size="35"
+    font-weight="bold"
+    font-family="Arial, sans-serif"
+  >
+    T
+  </text>
+</svg>
