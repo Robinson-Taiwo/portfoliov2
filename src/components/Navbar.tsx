@@ -3,36 +3,37 @@ import logo from "@/components/assets/icons/hexagon.svg"
 
 import React from 'react'
 import { Menu } from 'lucide-react'
+import Link from 'next/link'
 
 const Navbar = () => {
     return (
         <div className="w-full overflow-hidden flex flex-row items-center justify-between h-[10vh]   lg:px-12 p-4  ">
 
-            <Image src={logo} alt="Hexagon Logo" />
+            <Link href="/" >
+
+                <Image src={logo} alt="Hexagon Logo" />
+            </Link>
 
             <div className="lg:flex items-center hidden  space-x-8 text-[#ccd6f6] font-mono text-sm">
                 {/* Navigation Links */}
-                <a href="#about" className="group flex items-center space-x-1">
+                <Link href="about" className="group flex items-center space-x-1">
                     <span className="text-[#00e5ff]">01.</span>
                     <span className="group-hover:text-[#00e5ff] transition">About</span>
-                </a>
+                </Link>
 
-                <a href="#experience" className="group flex items-center space-x-1">
+                <Link href="experience" className="group flex items-center space-x-1">
                     <span className="text-[#00e5ff]">02.</span>
                     <span className="group-hover:text-[#00e5ff] transition">
                         Experience
                     </span>
-                </a>
+                </Link>
 
-                <a href="#work" className="group flex items-center space-x-1">
+
+
+                <Link href="contact" className="group flex items-center space-x-1">
                     <span className="text-[#00e5ff]">03.</span>
-                    <span className="group-hover:text-[#00e5ff] transition">Work</span>
-                </a>
-
-                <a href="#contact" className="group flex items-center space-x-1">
-                    <span className="text-[#00e5ff]">04.</span>
                     <span className="group-hover:text-[#00e5ff] transition">Contact</span>
-                </a>
+                </Link>
 
                 {/* Resume Button */}
                 <a
@@ -54,7 +55,7 @@ hover:bg-[] hover:text-[#00e5ff]
 
 
             <div className="lg:hidden  flex " >
-                <Menu className="h-10  text-[#00e5ff] w-10 "  />
+                <Menu className="h-10  text-[#00e5ff] w-10 " />
             </div>
 
         </div>
