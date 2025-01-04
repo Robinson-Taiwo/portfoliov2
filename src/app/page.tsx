@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div  className="flex flex-col  gap-8 " >
+    <div  className="flex flex-col  pb-[20rem] items-center  gap-8 " >
     <Home/>
     <AboutComponent/>
 

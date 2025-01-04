@@ -41,7 +41,7 @@ export default function RootLayout({
           <LeftSideBar />
 
           {/* Scrollable content with fixed height */}
-          <div className="w-full h-full   overflow-y-auto max-w-5xl">
+          <div className="w-full h-full flex items-center flex-col   overflow-y-auto ">
             {children}
           </div>
 
