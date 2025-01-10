@@ -1,6 +1,6 @@
 "use client";
 
-import { TypingAnimationDemo } from "@/components/TypingAnimation";
+// import { TypingAnimationDemo } from "@/components/TypingAnimation";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -20,19 +20,19 @@ const Home = () => {
     const timeoutWelcome = setTimeout(() => {
       setShowWelcome(false);
       setShowMainDiv(true);
-    }, 5000);
+    }, 2000);
 
     const timeoutName = setTimeout(() => {
       setShowName(true);
-    }, 6000);
+    }, 3000);
 
     const timeoutMagicText = setTimeout(() => {
       setShowMagicText(true);
-    }, 9000);
+    }, 6000);
 
     const timeoutParagraph = setTimeout(() => {
       setShowParagraph(true);
-    }, 12000);
+    }, 8000);
 
     return () => {
       clearTimeout(timeoutWelcome);
@@ -48,7 +48,7 @@ const Home = () => {
       {showWelcome && (
         <div className="flex items-center justify-center w-full">
           <div className="text-base font-light pt-10 text-[#8c909b] font-mono">
-            <TypingAnimationDemo size="lg" text="Welcome to my little space on the web" />
+            {/* <TypingAnimationDemo size="lg" text="Welcome to my little space on the web" /> */}
           </div>
         </div>
       )}
