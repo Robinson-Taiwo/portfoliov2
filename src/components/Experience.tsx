@@ -1,15 +1,12 @@
 "use client";
 import React, { useState } from "react";
+import { experiences } from "./experience";
+import { Triangle } from "lucide-react";
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState<string>("Mtech IT Services");
 
-  const experiences = [
-    { name: "Mtech IT Services", content: "Details about Mtech IT Services." },
-    { name: "ITPA", content: "Details about ITPA." },
-    { name: "HNG (internship)", content: "Details about HNG internship." },
-    { name: "Cranebolt Technology", content: "Details about Cranebolt Technology." },
-  ];
+
 
   return (
     <div className="flex flex-col w-full md:px-10">
@@ -28,28 +25,60 @@ const Experience = () => {
       <div className="flex flex-col w-full gap-8">
         {/* Navigation Tabs */}
         <div className="w-full pl-[1.4rem] overflow-auto">
-          <div className="flex w-[210%] border-b border-b-[#8c909b] gap-6 overflow-auto flex-row">
-            {experiences.map((experience) => (
-              <p
-                key={experience.name}
-                onClick={() => setActiveTab(experience.name)}
-                className={`text-sm w-full cursor-pointer ${
-                  activeTab === experience.name
-                    ? "text-[#00e5ff] bg-[#2b5255] items-center justify-center flex  px-[0.5rem]   border-b py-[0.5rem]  border-b-[#00e5ff]"
-                    : "text-[#8c909b] items-center justify-center flex  px-[0.5rem]  "
-                }`}
-              >
-                {experience.name}
-              </p>
-            ))}
-          </div>
+        <div className="flex w-[210%] border-b border-b-[#8c909b] gap-6 overflow-auto flex-row">
+  {experiences.map((experience) => (
+    <p
+      key={experience.name}
+      onClick={() => setActiveTab(experience.name)}
+      className={`text-sm w-full cursor-pointer transition-all duration-1000 ease-in-out ${
+        activeTab === experience.name
+          ? "text-[#00e5ff] bg-[#2b5255] items-center justify-center flex px-[0.5rem] border-b py-[0.5rem] border-b-[#00e5ff]"
+          : "text-[#8c909b] items-center  justify-center flex px-[0.5rem]"
+      }`}
+    >
+      {experience.name}
+    </p>
+  ))}
+</div>
         </div>
 
         {/* Tab Content */}
         <div className="w-full px-4 py-6">
-          {experiences.find((experience) => experience.name === activeTab)?.content}
+          {experiences.find((experience) => experience.name === activeTab)?.content && (
+            <div className="text-[#8c909b]">
+              {/* Role and Company */}
+              <h3 className="text-lg text-[#00e5ff] font-bold">
+                {experiences.find((experience) => experience.name === activeTab)?.content.role}{" "}
+                @ {activeTab}
+              </h3>
+
+              {/* Date */}
+              <p className="text-sm text-[#8c909b] mb-4">
+                {experiences.find((experience) => experience.name === activeTab)?.content.date}
+              </p>
+
+              {/* Activities */}
+              <div className="list-disc pl-5  text-sm space-y-2">
+                {experiences
+                  .find((experience) => experience.name === activeTab)
+                  ?.content.activities.map((activity, index) => (
+                    <div key={index} className="flex  flex-row">
+
+                      <Triangle className="mr-2 rotate-90 mt-[0.4rem] text-[#00e5ff]   h-2 w-2  " />
+
+
+                      <p className="text-[#8c909b] w-full ">
+                        {activity}
+                      </p>
+
+                    </div>
+                  ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
+
     </div>
   );
 };
