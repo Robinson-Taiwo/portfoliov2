@@ -43,7 +43,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col w-full max-w-5xl gap-6">
+    <div className="flex flex-col w-full h-screen mt-6 md:h-[80vh] md:justify-center lg:justify-start lg:mt-24   lg:max-w-5xl gap-6">
       {/* Welcome Section */}
       {showWelcome && (
         <div className="flex items-center justify-center w-full">
@@ -56,22 +56,25 @@ const Home = () => {
       {/* Main Div */}
       {showMainDiv && (
         <div
-          className={`flex flex-col px-4 gap-2 lg:pt-32 pt-16 transition-opacity duration-500 ease-in ${showMainDiv ? "opacity-100" : "opacity-0"
+          className={`flex flex-col lg:px-0   px-4 md:px-14 w-full  md:mt-2 gap-2  md:gap-4 lg:gap-0  transition-opacity duration-500 ease-in ${showMainDiv ? "opacity-100" : "opacity-0"
             }`}
         >
-          <div className="text-sm mt-4 relative top-8 text-[#00e5ff]">
-            <TypingAnimationDemo size="base" text="Heyyyy!! welcome to my space, i&apos;m" />
+          <div className="text-base mt-4 w-full relative  text-[#00e5ff]">
+            Heyyyy!! my name is
+            {/* <TypingAnimationDemo size="base" text="Heyyyy!! welcome to my space, i&apos;m" /> */}
           </div>
 
           {showName && (
-            <h2 className="text-7xl font-extrabold text-white">
-              <TypingAnimationDemo size="xl" text="Omoyeni Taiwo" />
+            <h2 className="lg:text-7xl lg:leading-relaxed text-4xl md:text-6xl font-extrabold text-white">
+              Omoyeni Taiwo.
+              {/* <TypingAnimationDemo size="xl" text="" /> */}
             </h2>
           )}
 
           {showMagicText && (
-            <h2 className="text-7xl font-extrabold text-[#8c909b]">
-              <TypingAnimationDemo size="xl" text="I create Magic on the web" />
+            <h2 className="xl:text-7xl lg:text-6xl text-4xl font-extrabold md:text-5xl text-[#8c909b]">
+              I build things for the web.
+              {/* <TypingAnimationDemo size="xl" text="" /> */}
             </h2>
           )}
 
@@ -82,7 +85,7 @@ const Home = () => {
               animate="visible"
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <p className="w-[55%] mt-4 mb-14 text-lg text-[#8c909b]">
+              <p className="lg:w-[60%] md:w-[80%] mt-4 mb-14 lg:text-lg text-base text-[#8c909b]">
                 I’m a software engineer specializing in building (and occasionally
                 designing) exceptional digital experiences. Currently, I’m focused
                 on building accessible, human-centered products at{" "}
@@ -104,7 +107,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                  text-[#00e5ff]  border border-[#00e5ff] rounded-sm px-4 text-lg py-4 w-fit 
+                  text-[#00e5ff]  border border-[#00e5ff] rounded-sm px-4 lg:text-lg text-base py-4 w-fit 
                   transition-all duration-300 ease-in-out
                  
                   hover:translate-x-[-6px] hover:translate-y-[-6px] hover:shadow-[6px_6px_0px_#00e5ff]

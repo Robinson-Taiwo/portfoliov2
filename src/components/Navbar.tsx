@@ -2,16 +2,18 @@ import Image from 'next/image'
 import logo from "@/components/assets/icons/hexagon.svg"
 
 import React from 'react'
-import { Menu } from 'lucide-react'
+// import { Menu } from 'lucide-react'
+// import { HiMenuAlt3 } from "react-icons/hi";
 import Link from 'next/link'
+import { CiMenuFries } from 'react-icons/ci';
 
 const Navbar = () => {
     return (
-        <div className="w-full overflow-hidden flex flex-row items-center justify-between h-[10vh]   lg:px-12 p-4  ">
+        <div className="w-full overflow-hidden flex flex-row items-center justify-between  pb-6   lg:px-12 p-4  ">
 
             <Link href="/" >
 
-                <Image src={logo} alt="Hexagon Logo" />
+                <Image src={logo} alt="Hexagon Logo"   />
             </Link>
 
             <div className="lg:flex items-center hidden  space-x-8 text-[#ccd6f6] font-mono text-sm">
@@ -55,7 +57,8 @@ hover:bg-[] hover:text-[#00e5ff]
 
 
             <div className="lg:hidden  flex " >
-                <Menu className="h-10  text-[#00e5ff] w-10 " />
+                <CiMenuFries className="h-8  text-[#00e5ff] w-8 />
+                // <Menu  " />
             </div>
 
         </div>
