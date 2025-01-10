@@ -43,7 +43,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col w-full h-screen mt-6 md:h-[80vh] md:justify-center lg:justify-start lg:mt-24   lg:max-w-5xl gap-6">
+    <div className="flex flex-col w-full  h-[85vh] mt-6 md:h-[80vh] justify-center lg:justify-start lg:mt-24   lg:max-w-5xl gap-6">
       {/* Welcome Section */}
       {showWelcome && (
         <div className="flex items-center justify-center w-full">
@@ -72,7 +72,7 @@ const Home = () => {
           )}
 
           {showMagicText && (
-            <h2 className="xl:text-7xl lg:text-6xl text-4xl font-extrabold md:text-5xl text-[#8c909b]">
+            <h2 className="xl:text-7xl lg:text-6xl w-[90%]  md:w-full text-4xl font-extrabold md:text-5xl text-[#8c909b]">
               I build things for the web.
               {/* <TypingAnimationDemo size="xl" text="" /> */}
             </h2>
