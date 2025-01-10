@@ -56,7 +56,7 @@ const Home = () => {
       {/* Main Div */}
       {showMainDiv && (
         <div
-          className={`flex flex-col lg:px-0   px-4 md:px-14 w-full  md:mt-2 gap-2  md:gap-4 lg:gap-0  transition-opacity duration-500 ease-in ${showMainDiv ? "opacity-100" : "opacity-0"
+          className={`flex flex-col lg:px-0 relative top-[-3rem]  px-4 md:px-14 w-full  md:mt-2 gap-2  md:gap-4 lg:gap-0  transition-opacity duration-500 ease-in ${showMainDiv ? "opacity-100" : "opacity-0"
             }`}
         >
           <div className="text-base mt-4 w-full relative  text-[#00e5ff]">
