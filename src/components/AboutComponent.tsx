@@ -20,7 +20,7 @@ const AboutComponent = () => {
                         <div className="lg:w-96 flex-grow h-[0.1px] bg-[#8c909b] "></div>
                     </div>
 
-                    <div className="flex flex-col lg:flex-row max-w-4xl">
+                    <div className="flex flex-col lg:justify-between lg:flex-row max-w-4xl">
 
 
                         <div className=" flex flex-col gap-4 lg:w-[53%]  text-[#8c909b] ">
@@ -81,7 +81,7 @@ const AboutComponent = () => {
                         </div>
 
 
-                        <div className="image :w-[47%] md:w-full mt-14   h-fit items-center  flex justify-center  ">
+                        <div className="image w-full md:w-fit  mt-14   h-fit items-center  flex justify-center  ">
 
                             <Image src={me} className="lg:h-[20.3rem] rounded-md lg:w-[19rem] w-[68%] md:w-[40%] md:h-[17rem]  h-[15rem] " alt="my image" />
 

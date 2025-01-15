@@ -8,7 +8,7 @@ const page = () => {
     <div className="flex flex-col w-full  pb-[20rem] gap-6 items-center  " >
       <Home />
       <AboutComponent />
-      <div className="mt-14 w-full">
+      <div className="mt-14 w-full flex items-center justify-center ">
         <Experience />
       </div>
 
