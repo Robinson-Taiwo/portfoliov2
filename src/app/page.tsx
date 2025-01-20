@@ -1,6 +1,8 @@
 import AboutComponent from '@/components/AboutComponent'
 import Experience from '@/components/Experience'
 import Home from '@/components/Hero'
+import OtherProject from '@/components/OtherProject'
+import Projects from '@/components/Projecs'
 import React from 'react'
 
 const page = () => {
@@ -11,6 +13,8 @@ const page = () => {
       <div className="mt-14 w-full flex items-center justify-center ">
         <Experience />
       </div>
+      <Projects />
+      <OtherProject/>
 
     </div>
   )

@@ -17,7 +17,7 @@ const AboutComponent = () => {
                             <span className=" text-[white] md:text-2xl text-xl transition">About me</span>
                         </div>
 
-                        <div className="lg:w-96 flex-grow h-[0.1px] bg-[#8c909b] "></div>
+                        <div className="lg:w-96 flex-grow lg:flex-none  h-[0.1px] bg-[#8c909b] "></div>
                     </div>
 
                     <div className="flex flex-col lg:justify-between lg:flex-row max-w-4xl">
@@ -80,11 +80,13 @@ const AboutComponent = () => {
 
                         </div>
 
+                        <div className="w-full lg:w-fit flex lg:items-start items-center justify-center ">
 
-                        <div className="image w-full md:w-fit  mt-14   h-fit items-center  flex justify-center  ">
+                            <div className="image w-full md:w-fit  mt-14 lg:mt-0  h-fit items-center   flex justify-center  ">
 
-                            <Image src={me} className="lg:h-[20.3rem] rounded-md lg:w-[19rem] w-[68%] md:w-[40%] md:h-[17rem]  h-[15rem] " alt="my image" />
+                                <Image src={me} className="lg:h-[20.3rem] rounded-md lg:w-[19rem]  w-[68%] md:w-[19rem] md:h-[20.3rem]  h-[15rem] " alt="my image" />
 
+                            </div>
                         </div>
 
 
@@ -93,8 +95,7 @@ const AboutComponent = () => {
                 </div>
             </div>
 
-            {/* second part of the about pagr */}
-            <div></div>
+          
         </div>
     );
 };
