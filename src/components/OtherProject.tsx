@@ -11,7 +11,7 @@ const OtherProject = () => {
     before:transition-all before:duration-300 before:ease-in-out
     hover:before:w-full  ">view my Github projects</p>
 
-            <div className="grid grid-cols-3 md:grid-cols-2  gap-y-4 gap-x-4 w-full ">
+            <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-4 w-full ">
                 <div className="  md:h-[307px]  lg:h-full  xl:h-[307px] xl:w-[324px] gap-4 flex flex-col items-center  bg-[#11213f] justify-between p-6 ">
 
                     <div className="flex flex-col">
