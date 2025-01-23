@@ -6,11 +6,11 @@ import Image from 'next/image';
 
 const ProjectComponent = () => {
     return (
-        <div className="flex h-[363px] w-full  flex-row relative" >
+        <div className="flex xl:h-[363px] lg:h-[300px]  w-full  flex-row relative" >
 
             <div className="projext-image h-full relative   w-[60%]   ">
 
-                <div className="absolute rounded-lg bg-green-500 lack h-full  z-10 w-[120%] ">
+                <div className="absolute rounded-lg bg-green-500 lack h-full  z-10 xl:w-[120%] lg:w-[150%] ">
                     <div className="relative w-full h-full ">
 
                         <div className="bg-[#00e5ff] border-r-[1px] border-r-[#00e5ff] rounded-sm bg-opacity-30 hover:border-none  z-20 absolute h-full w-full hover:bg-transparent  "></div>
@@ -30,22 +30,22 @@ const ProjectComponent = () => {
                 </div>
                 {/* PROJECT TITLE */}
                 <div className='font-bold text-2xl hover:text-[#00e5ff] text-[#ccd6f6] cursor-pointer  ' >
-                    Halcyon Theme
+                    My Portfolio
                 </div>
                 {/* PROJECT DESCRIPTION */}
                 <div className="w-[98%] px-6 py-6 bg-[#11213f] flex justify-end relative  rounded-md   z-50" >
                     <div className=" text-[#ccd6f6]    w-[95%]  text-end text-[0.85rem] " >
-                        A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+                        A minimal, dark blue theme portfolio inspired by Brittany Chiang. it contains all my social media handles alongside my experiences and amazing projects all together
                     </div>
                 </div>
 
                 {/* PROJECT TOOLS */}
-                <div className="flex text-[#ccd6f6] gap-4 text-sm"  >
-                    <div>  VS Code</div>
-                    <div>Sublime Text</div>
-                    <div>Atom</div>
-                    <div>iTerm2</div>
-                    <div>Hyper</div>
+                <div className="flex relative  z-50  text-[#ccd6f6] gap-4 text-sm"  >
+                    <div> VS Code</div>
+                    <div>Next.js</div>
+                    <div>Typescript</div>
+                    <div>Tailwind CSS</div>
+                    <div>Framer Motion</div>
 
 
                 </div>

@@ -20,7 +20,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className="w-full flex flex-col gap-24 " >
+            <div className="w-full flex md:px-12 lg:px-0 flex-col gap-24 " >
                 <ProjectComponent />
                 <ProjectComponent />
                 <ProjectComponent />

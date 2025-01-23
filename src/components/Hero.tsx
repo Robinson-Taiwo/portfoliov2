@@ -43,7 +43,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col w-full  h-[85vh] mt-6 md:h-[80vh] justify-center lg:justify-start lg:mt-24   lg:max-w-5xl gap-6">
+    <div className="flex flex-col w-full  h-[85vh] mt-6 md:h-[80vh] justify-center lg:justify-center lg:mt-24   lg:max-w-5xl gap-6">
       {/* Welcome Section */}
       {showWelcome && (
         <div className="flex items-center justify-center w-full">
