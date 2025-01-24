@@ -4,15 +4,15 @@ import React from 'react'
 const OtherProject = () => {
     return (
         <div className='w-full max-w-5xl md:px-12 lg:px-0  flex flex-col mt-64 justify-center items-center  '  >
-            <h1 className="font-bold text-[#ccd6f6]  text-3xl ">Other Noteworthy Projects</h1>
+            <h1 className="font-bold text-[#ccd6f6] text-center text-3xl ">Other Noteworthy Projects</h1>
 
             <p className="text-sm text-[#00e5ff] mt-4 mb-8  relative 
     before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[1px] before:bg-[#00e5ff] 
     before:transition-all before:duration-300 before:ease-in-out
     hover:before:w-full  ">view my Github projects</p>
 
-            <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-4 w-full ">
-                <div className="  md:h-[307px]  lg:h-full  xl:h-[307px] xl:w-[324px] gap-4 flex flex-col items-center  bg-[#11213f] justify-between p-6 ">
+            <div className="grid  md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-y-4 gap-x-4 w-full lg:px-0 px-6 ">
+                <div className="  md:h-[307px]  lg:h-full  xl:h-[307px] xl:w-[324px] gap-4 flex flex-col md:items-center items-start  bg-[#11213f] justify-between p-6 ">
 
                     <div className="flex flex-col">
 
@@ -35,9 +35,9 @@ const OtherProject = () => {
                         </p>
                     </div>
 
-                    <div className="flex gap-4 font-thin flex-row">
+                    <div className="flex gap-4 justify-start font-thin flex-row">
 
-                        <div className=" font-extralight text-[#ccd6f6] text-base ">
+                        <div className=" font-extralight text-[#ccd6f6] text-base  ">
                             Next.js
                         </div>
                         <div className=" text-[#ccd6f6] text-base ">
@@ -247,8 +247,8 @@ const OtherProject = () => {
                         </div>
 
                         <div className="text-lg mt-6 font-semibold text-[#ccd6f6] ">
-                            Apple Music Embeddable Web Player Widget       
-                                              </div>
+                            Apple Music Embeddable Web Player Widget
+                        </div>
 
 
                         <p className="text-sm mt-4 text-[#ccd6f6]  ">

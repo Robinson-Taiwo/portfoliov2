@@ -6,9 +6,9 @@ import Image from 'next/image';
 
 const ProjectComponent = () => {
     return (
-        <div className="flex xl:h-[363px] lg:h-[300px]  w-full  flex-row relative" >
+        <div className="flex xl:h-[363px]   h-[363px] lg:h-[300px]  w-full  flex-row relative" >
 
-            <div className="projext-image h-full relative   w-[60%]   ">
+            <div className="projext-image h-full relative  lg:w-[60%] w-[100%]    ">
 
                 <div className="absolute rounded-lg bg-green-500 lack h-full  z-10 xl:w-[120%] lg:w-[150%] ">
                     <div className="relative w-full h-full ">
@@ -22,7 +22,7 @@ const ProjectComponent = () => {
 
             </div>
 
-            <div className="texts h-full gap-4 py-6  flex flex-col items-end  w-[578] ">
+            <div className="texts h-full   bg-[#001433] bg-opacity-90  z-40  lg:bg-transparent  lg:gap-4 gap-2    absolute lg:relative py-6  flex flex-col lg:items-end justify-center lg:justify-start  px-10 lg:px-0 w-full  lg:w-[578px] ">
 
                 {/* PROJECT FEATURED TEXT */}
                 <div className="featured-project  text-[#00e5ff] " >
@@ -33,19 +33,19 @@ const ProjectComponent = () => {
                     My Portfolio
                 </div>
                 {/* PROJECT DESCRIPTION */}
-                <div className="w-[98%] px-6 py-6 bg-[#11213f] flex justify-end relative  rounded-md   z-50" >
-                    <div className=" text-[#ccd6f6]    w-[95%]  text-end text-[0.85rem] " >
+                <div className="w-[98%] lg:px-6 px-0   justify-start lg:justify-end  py-6 bg-[#11213f] lg:bg-[#11213f] bg-transparent flex  relative  rounded-md   z-50" >
+                    <div className=" text-[#ccd6f6]    w-[95%]  lg:text-end text-[0.85rem] " >
                         A minimal, dark blue theme portfolio inspired by Brittany Chiang. it contains all my social media handles alongside my experiences and amazing projects all together
                     </div>
                 </div>
 
                 {/* PROJECT TOOLS */}
-                <div className="flex relative  z-50  text-[#ccd6f6] gap-4 text-sm"  >
-                    <div> VS Code</div>
-                    <div>Next.js</div>
-                    <div>Typescript</div>
-                    <div>Tailwind CSS</div>
-                    <div>Framer Motion</div>
+                <div className="flex relative flex-row   z-50  text-[#ccd6f6] gap-x-4 text-sm gap-y-2 flex-wrap "  >
+                    <div  className="block w-fit " > VS Code</div>
+                    <div  className="block w-fit " >Next.js</div>
+                    <div  className="block w-fit " >Typescript</div>
+                    <div  className="block w-fit " >Tailwind CSS</div>
+                    <div  className="block w-fit " >Framer Motion</div>
 
 
                 </div>
